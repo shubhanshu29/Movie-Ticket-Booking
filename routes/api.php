@@ -18,8 +18,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('ticket', 'TicketsController@index');
 Route::get('ticket/{id}','TicketsController@getTicketByID');
 Route::post('ticket/create', 'TicketsController@createTicket');
 Route::put('ticket/{ticket}', 'TicketsController@updateTicket');
 Route::delete('ticket/{ticket}', 'TicketsController@deleteTicket');
+Route::get('ticket/time/{time}', 'TicketsController@showAllTickets');

@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
 use App\Ticket;
 
@@ -23,8 +22,6 @@ class TicketsController extends Controller
         else{
             return 'Seats full for given timings.';
         }
-        
-        
     }
 
     public function updateTicket(Request $request, Ticket $ticket){
@@ -35,5 +32,10 @@ class TicketsController extends Controller
     public function deleteTicket(Request $request, Ticket $ticket){
         $ticket->delete();
         return response()->json(null,204);
+    }
+
+    public function showAllTickets($time){
+        $results=Ticket::where('time', $time)->get();
+        return response()->json($results,200);
     }
 }
