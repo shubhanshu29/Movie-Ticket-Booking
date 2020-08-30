@@ -1,6 +1,6 @@
 # Movie-Ticket-Booking
 A laravel and MySQL based movie ticket booking application.
-PROBLEM STATEMENT: 
+# PROBLEM STATEMENT: 
 
 
 You have to design a REST interface for a movie theatre ticket booking system. It should support the following business cases:
@@ -34,7 +34,7 @@ You have to design a REST interface for a movie theatre ticket booking system. I
 ● Please avoid plagiarism.
 
 
-Solution:
+# Solution:
 
 I have used Laravel and MySQL to address this problem statement. 
 
@@ -48,7 +48,7 @@ In resources/views there are the views(not many in this project due to the backe
 
 The routes of all the APIs are in the Routes/api.php .
 
-Models:
+# Models:
 
 User: User table in MySQL to store the details of users that can use the functionality of the application after logging in.
 
