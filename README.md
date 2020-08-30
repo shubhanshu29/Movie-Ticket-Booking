@@ -64,14 +64,20 @@ User: User table in MySQL to store the details of users that can use the functio
 
 Ticket: Ticket table to store all the information about the ticket for different API calling and storing purposes.
 
+# Run the app
+
+After setting your environment and saving the project open the CLI and run the command:
+$php artisan serve
+
+This would run the project and give you the host URL.
 
 In order to test the API, you must login to the website by clicking login on the page or by navigating to localhost/login. You can register yourself or you can use the 
 
 Credentials:
 	Username/Email : 1234@1234.com
-Password: 12345678
+    Password: 12345678
 
-
+# Postman Screenshots with other solutions
 Now, according to the problem statement the first API was to book a ticket with appropriate fields:
 
 
