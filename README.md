@@ -53,9 +53,13 @@ The routes of all the APIs are in the Routes/api.php .
 # APIs
 
 1  A  'POST' request to "ticket/create" would book a ticket.
+
 2. A 'PUT' request to "ticket/{ticket}" would update the timing of a ticket.
+
 3. A 'DELETE' request to "ticket/{ticket}" would delete the ticket.
+
 4. A 'GET' request to "ticket/time/{time} would show you all the tickets of a particular time.
+
 5. A 'GET' request to "ticket/{ticket}" would show you the details of the person who booked the ticket.
 
 # Models:
