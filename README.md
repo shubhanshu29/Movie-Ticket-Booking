@@ -52,7 +52,7 @@ The routes of all the APIs are in the Routes/api.php .
 
 # APIs
 
-1. A 'POST' request to "ticket/create" would book a ticket.
+1  A  'POST' request to "ticket/create" would book a ticket.
 2. A 'PUT' request to "ticket/{ticket}" would update the timing of a ticket.
 3. A 'DELETE' request to "ticket/{ticket}" would delete the ticket.
 4. A 'GET' request to "ticket/time/{time} would show you all the tickets of a particular time.
@@ -67,14 +67,16 @@ Ticket: Ticket table to store all the information about the ticket for different
 # Run the app
 
 After setting your environment and saving the project open the CLI and run the command:
-$php artisan serve
+
+                $php artisan serve
 
 This would run the project and give you the host URL.
 
 In order to test the API, you must login to the website by clicking login on the page or by navigating to localhost/login. You can register yourself or you can use the 
 
 Credentials:
-	Username/Email : 1234@1234.com
+	
+    Username/Email : 1234@1234.com
     Password: 12345678
 
 # Postman Screenshots with other solutions
