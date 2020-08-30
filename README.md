@@ -130,6 +130,7 @@ One of the constraints was that the maximum number of tickets that can be booked
 
 Here, a request was sent to ‘create a ticket’ API (mentioned above) when the number of tickets that were in the database with required time was 20. In that case the API sends back a message that “Seats are full for given timings” which fulfills the above need.
 	
+# Scheduler
 
 <img src="https://github.com/shubhanshu29/Movie-Ticket-Booking/blob/master/Postman%20Screenshots/Screenshot%20(27).png" alt="Create Ticket">
 
