@@ -68,19 +68,15 @@ The above screenshot shows the GET request that is being sent to the API localho
 
 
 
-
-
-
-
-
-
-
 Next is to delete a ticket with a given ID.
 
+<img src="https://github.com/shubhanshu29/Movie-Ticket-Booking/blob/master/Postman%20Screenshots/Screenshot%20(32).png" alt="Create Ticket">
 
 The above screenshot shows the DELETE request that is being sent to the API localhost/api/ticket/{ticket}  using the appropriate parameters and you can also see the response code in the bottom half of the screen
 
 Next is to retrieve all the information about the user who books the ticket using ticket id:
+
+<img src="https://github.com/shubhanshu29/Movie-Ticket-Booking/blob/master/Postman%20Screenshots/Screenshot%20(33).png" alt="Create Ticket">
 
 The above screenshot shows the GET request that is being sent to the API localhost/api/ticket/{id}  using the appropriate parameters and you can also see the response code along with its JSON values that is the details of the person who booked that ticket in the bottom half of the screen.
 
