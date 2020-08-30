@@ -8,17 +8,23 @@ use App\Ticket;
 class TicketsController extends Controller
 {
     //
-    public function index(){
-        return response()->json(Ticket::get(), 200);
-    }
 
     public function getTicketByID($id){
         return response()->json(Ticket::find($id), 200);
     }
 
     public function createTicket(Request $request){
-        $ticket= Ticket::create($request->all());
-        return response()->json($ticket,201);
+        $time = $request->input('time');
+        $results = Ticket::where('time', $time)->get();
+        if(count($results)<20){
+            $ticket= Ticket::create($request->all());
+            return response()->json($ticket,201);
+        }
+        else{
+            return 'Seats full for given timings.';
+        }
+        
+        
     }
 
     public function updateTicket(Request $request, Ticket $ticket){
