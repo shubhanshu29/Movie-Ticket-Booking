@@ -38,18 +38,26 @@ Solution:
 
 I have used Laravel and MySQL to address this problem statement. 
 
-Laravel is an MVC framework and the directory structure of Laravel is such that 
+Laravel is an MVC framework and the directory structure of Laravel is such that-
+
 In App/Http/Controller you would find the controllers.
+
 In App/Http there are the models
+
 In resources/views there are the views(not many in this project due to the backend necessity).
+
 The routes of all the APIs are in the Routes/api.php .
 
 Models:
+
 User: User table in MySQL to store the details of users that can use the functionality of the application after logging in.
+
 Ticket: Ticket table to store all the information about the ticket for different API calling and storing purposes.
 
 
-In order to test the API, you must login to the website by clicking login on the page or by navigating to localhost/login. You can register yourself or you can use the credentials:
+In order to test the API, you must login to the website by clicking login on the page or by navigating to localhost/login. You can register yourself or you can use the 
+
+Credentials:
 	Username/Email : 1234@1234.com
 Password: 12345678
 
