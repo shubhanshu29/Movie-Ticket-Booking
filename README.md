@@ -83,6 +83,17 @@ Credentials:
     Username/Email : 1234@1234.com
     Password: 12345678
 
+
+# Scheduler
+
+
+<img src="https://github.com/shubhanshu29/Movie-Ticket-Booking/blob/master/Postman%20Screenshots/Screenshot%20(27).png" alt="Create Ticket">
+
+One plus point was to delete tickets that were older than 8 hours from the current time(I have not used the status of expired because I am already deleting the expired tickets so adding another field would be a wastage of memory).  However, I have used a concept known as scheduler from Laravel library that runs every minute and check if there is any entry with time less than 480 minutes(8 hours) of the current time and if it finds any, it deletes the entry automatically, Here is the code snippet of the above mentioned scheduler. You can find it in App/Console/Kernel.
+
+
+
+
 # Postman Screenshots with other solutions
 Now, according to the problem statement the first API was to book a ticket with appropriate fields:
 
@@ -130,13 +141,8 @@ One of the constraints was that the maximum number of tickets that can be booked
 
 Here, a request was sent to ‘create a ticket’ API (mentioned above) when the number of tickets that were in the database with required time was 20. In that case the API sends back a message that “Seats are full for given timings” which fulfills the above need.
 	
-# Scheduler
-
-<img src="https://github.com/shubhanshu29/Movie-Ticket-Booking/blob/master/Postman%20Screenshots/Screenshot%20(27).png" alt="Create Ticket">
-
-One plus point was to delete tickets that were older than 8 hours from the current time(I have not used the status of expired because I am already deleting the expired tickets so adding another field would be a wastage of memory).  However, I have used a concept known as scheduler from Laravel library that runs every minute and check if there is any entry with time less than 480 minutes(8 hours) of the current time and if it finds any, it deletes the entry automatically, Here is the code snippet of the above mentioned scheduler. You can find it in App/Console/Kernel.
-
 
 
 # Tests
+
 I have also created some of the test cases for all APIs which are there in the tests/Feature folder. 
